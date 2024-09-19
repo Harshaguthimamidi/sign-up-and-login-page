@@ -1,21 +1,15 @@
-
-let pass;
-let confPass
-let x;
-
-
 addEventListener("submit", List);
 
 function List() {
-   event.preventDefault();
+  event.preventDefault();
 
   let loginInfoListArr;
 
-if (localStorage.getItem("LoginPersonInfo") !== null) {
-  loginInfoListArr = JSON.parse(localStorage.getItem("LoginPersonInfo"));
-} else {
-  loginInfoListArr = [];
-}
+  if (localStorage.getItem("LoginPersonInfo") !== null) {
+    loginInfoListArr = JSON.parse(localStorage.getItem("LoginPersonInfo"));
+  } else {
+    loginInfoListArr = [];
+  }
 
   let loginInfoListObj = {
     personName: document.querySelector("#name").value,
@@ -29,12 +23,16 @@ if (localStorage.getItem("LoginPersonInfo") !== null) {
 
   loginInfoListArr.push(loginInfoListObj);
 
-  if(loginInfoListObj.personPassword!=loginInfoListObj.personConformPass){
-    document.getElementById("message").innerHTML = "**password not match!";  
-    return false;  
-     
-   }
-   else{
+  let check = loginInfoListArr.filter(function (element) {
+    return element.personEmail === loginInfoListObj.personEmail;
+  });
+
+  if (loginInfoListObj.personPassword != loginInfoListObj.personConformPass) {
+    document.getElementById("message").innerHTML = symbol:"Wrong password. Try again.";
+  } else if (check.length > 1) {
+    document.getElementById("exist").innerHTML = "email already exist";
+    return false;
+  } else {
     localStorage.setItem("LoginPersonInfo", JSON.stringify(loginInfoListArr));
     document.querySelector("#name").value = "";
     document.querySelector("#email").value = "";
@@ -43,9 +41,9 @@ if (localStorage.getItem("LoginPersonInfo") !== null) {
     document.querySelector("#gender").value = "";
     document.querySelector("#password").value = "";
     document.querySelector("#confirmPass").value = "";
-    document.getElementById("message").innerHTML =""; 
+    document.getElementById("message").innerHTML = "";
+    document.getElementById("exist").innerHTML = "";
      window.location.href="http://127.0.0.1:5500/login.html";
     return true;
-   }  
-  
+  }
 }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js"></script>
+     
+    <title>Sign Up page</title>
+
+</head>
+
+<body >
+            <div id="outer">
+                <form id="myForm" >
+                    <h1> Sign up </h1>
+                    <label for="name">Enter Your Full Name:</label>
+                    <br>
+                    <input id="name" type="text" class="textBox" placeholder="Your Name" autocomplete="off">
+                    <br>
+                    <label for="email">Enter Your Email ID:</label>
+                    <br>
+                    <input id="email" type="email" class="textBox" placeholder="Your Email Id" autocomplete="off">
+                    <br />
+                    <span id="exist" style="color: red;"></span>
+                    
+                    <label for="telephone"> Your Mobile Number:</label>
+                    <br>
+                    <input type="tel" class="textBox" id="telephone" autocomplete="off" >
+                    <br>
+                    <label for="option">Country:</label>
+                    <br>
+                    <select id="option" class="textBox"  type="country" name="country" autocomplete="off">
+                        <option value="country ">Select Your Country</option>
+                        <option value="india">India</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                    <br>
+                    Select Your Gender:
+                    <br>
+                    <select class="textBox" id="gender" type="country" name="gender" autocomplete="off">
+                        <option value="gender ">Select Your Gender</option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select>
+                    
+                    <br>
+                    <label for="password">Create Your Password:</label>
+                    
+                    <br>
+                    <input id="password" type="password" required minlength="4" required maxlength="20"  class="textBox" />
+                    <br />
+                    <span id = "message"  > </span>  
+                     
+                    <label for="confirmPass">Confirm Your Password:</label>
+                    <br>
+                    <input id="confirmPass" type="password" class="textBox" required minlength="4" required maxlength="20" />
+                    <br>
+                    <label for="submit"> </label>
+                    <br>
+                    <input  type="submit" id="submit"   value="SUBMIT" />
+                    
+                </form>
+            </div>
+       
+ 
+
+</body>
+
+</html>
