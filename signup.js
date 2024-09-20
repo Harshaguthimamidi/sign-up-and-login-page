@@ -28,7 +28,7 @@ function List() {
   });
 
   if (loginInfoListObj.personPassword != loginInfoListObj.personConformPass) {
-    document.getElementById("message").innerHTML = "Wrong password. Try again.";
+    document.getElementById("message").innerHTML = "Password Not Match With Confirm Password";
   } else if (check.length > 1) {
     document.getElementById("exist").innerHTML = "email already exist";
     return false;

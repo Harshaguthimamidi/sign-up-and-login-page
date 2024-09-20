@@ -10,7 +10,7 @@ body {
 #exist {
   color: red;
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 
 h1 {
