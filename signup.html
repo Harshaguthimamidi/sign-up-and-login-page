@@ -19,21 +19,21 @@
                     <h1> Sign up </h1>
                     <label for="name">Enter Your Full Name:</label>
                     <br>
-                    <input id="name" type="text" class="textBox" placeholder="Your Name" autocomplete="off">
+                    <input id="name" type="text" class="textBox" required placeholder="Your Name" autocomplete="off">
                     <br>
                     <label for="email">Enter Your Email ID:</label>
                     <br>
-                    <input id="email" type="email" class="textBox" placeholder="Your Email Id" autocomplete="off">
+                    <input id="email" type="email" class="textBox" required placeholder="Your Email Id" autocomplete="off">
                     <br />
                     <span id="exist" ></span>
                     
                     <label for="telephone"> Your Mobile Number:</label>
                     <br>
-                    <input type="tel" class="textBox" id="telephone" autocomplete="off" >
+                    <input type="tel" class="textBox" id="telephone" required="true" autocomplete="off" >
                     <br>
                     <label for="option">Country:</label>
                     <br>
-                    <select id="option" class="textBox"  type="country" name="country" autocomplete="off">
+                    <select id="option" class="textBox"  type="country" required name="country" autocomplete="off">
                         <option value="country ">Select Your Country</option>
                         <option value="india">India</option>
                         <option value="Australia">Australia</option>
@@ -41,7 +41,7 @@
                     <br>
                     Select Your Gender:
                     <br>
-                    <select class="textBox" id="gender" type="country" name="gender" autocomplete="off">
+                    <select class="textBox" id="gender" type="country" required name="gender" autocomplete="off">
                         <option value="gender ">Select Your Gender</option>
                         <option value="male">male</option>
                         <option value="female">female</option>
@@ -61,8 +61,11 @@
                     <br>
                     <label for="submit"> </label>
                     <br>
-                    <input  type="submit" id="submit"   value="SUBMIT" />
-                    
+                    <input  type="submit" id="submit"   value="REGISTER" />
+                    <br />
+                    <label for="submit"> OR</label>
+                    <br>
+                    <input  type="button" id="Submit" onclick="relocate()"  value="login" />
                 </form>
             </div>
        

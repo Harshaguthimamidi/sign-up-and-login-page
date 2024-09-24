@@ -3,6 +3,7 @@ addEventListener("submit", List);
 function List() {
   event.preventDefault();
 
+
   let loginInfoListArr;
 
   if (localStorage.getItem("LoginPersonInfo") !== null) {
@@ -30,7 +31,8 @@ function List() {
   if (loginInfoListObj.personPassword != loginInfoListObj.personConformPass) {
     document.getElementById("message").innerHTML = "Password Not Match With Confirm Password";
   } else if (check.length > 1) {
-    document.getElementById("exist").innerHTML = "email already exist";
+    document.getElementById("exist").innerHTML = "Email Already Exist click on login ";
+    
     return false;
   } else {
     localStorage.setItem("LoginPersonInfo", JSON.stringify(loginInfoListArr));
@@ -43,7 +45,14 @@ function List() {
     document.querySelector("#confirmPass").value = "";
     document.getElementById("message").innerHTML = "";
     document.getElementById("exist").innerHTML = "";
-     window.location.href="http://127.0.0.1:5500/login.html";
+    //  window.location.href="http://127.0.0.1:5500/login.html";
     return true;
+    
   }
+}
+
+document
+function relocate(){
+ 
+console.log(empty)
 }

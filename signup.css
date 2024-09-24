@@ -56,17 +56,18 @@ input[type="password"] {
   border: 1px blue solid;
 }
 
-input[value="SUBMIT"] {
+input[value="REGISTER"] {
   cursor: pointer;
   background-color: #50a553;
   text-align: center;
-  padding: 2px 108px;
+  padding: 2px 97px;
   font-size: 20px;
   font-family: cursive;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
-input[value="SUBMIT"]:hover {
+input[value="REGISTER"]:hover {
   background-color: #87d78a;
 }
 
