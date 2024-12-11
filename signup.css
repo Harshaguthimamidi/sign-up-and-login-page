@@ -1,5 +1,5 @@
 body {
-  background-image: url(background-img.png);
+  background-image: url(images/background-img.png);
   background-size: 100vw 100vh;
   max-height: fit-content;
   background-repeat: no-repeat;
@@ -23,8 +23,8 @@ h1 {
 
 #outer {
   position: fixed;
-  right: 15%;
-  top: 13%;
+  right: 40%;
+  top: 9%;
   font-family: cursive;
   font-size: small;
   line-height: 150%;
@@ -35,6 +35,7 @@ h1 {
   box-shadow: #82c599 0px 0px 20px;
   box-sizing: border-box;
   padding: 25px 25px;
+  opacity: 0.8;
 }
 
 select {
@@ -56,30 +57,66 @@ input[type="password"] {
   border: 1px blue solid;
 }
 
-input[value="REGISTER"] {
+input[value="SIGN UP"],
+input[value="LOGIN"] {
   cursor: pointer;
   background-color: #50a553;
   text-align: center;
-  padding: 2px 97px;
+  width: 301px;
   font-size: 20px;
   font-family: cursive;
   border-radius: 5px;
   box-sizing: border-box;
 }
 
-input[value="REGISTER"]:hover {
-  background-color: #87d78a;
+input[value="SIGN UP"]:hover,
+input[value="LOGIN"]:hover {
+  background-color: #507ca5;
 }
 
-.textBox:focus:hover {
-  border: 1.5px solid rgb(204, 255, 0);
+.textBox:focus {
+  outline: none;
+  border: 1px solid gold;
 }
 
-/* @media screen and (max-width: 400px)   {
-    #outer {
-     
-      position: fixed;
-      right:auto;
-      top:97px;
-    }
-  } */
+p {
+  text-align: center;
+}
+
+.input-container,
+.input-containers {
+  position: relative;
+  display: inline-block;
+}
+
+#confirmPass {
+  width: 124%;
+  padding-right: 40px;
+}
+
+#eye {
+  user-select: none;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 72%;
+  left: 261px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#password {
+  width: 85%;
+  padding-right: 40px;
+}
+
+#eyes {
+  user-select: none;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 13.5%;
+  left: 261px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

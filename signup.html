@@ -2,75 +2,88 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
 
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signup.css">
-    <script src="signup.js"></script>
-     
-    <title>Sign Up page</title>
-
+    <title>SignUp page</title>
 </head>
 
-<body >
-            <div id="outer">
-                <form id="myForm" >
-                    <h1> Sign up </h1>
-                    <label for="name">Enter Your Full Name:</label>
-                    <br>
-                    <input id="name" type="text" class="textBox" required placeholder="Your Name" autocomplete="off">
-                    <br>
-                    <label for="email">Enter Your Email ID:</label>
-                    <br>
-                    <input id="email" type="email" class="textBox" required placeholder="Your Email Id" autocomplete="off">
-                    <br />
-                    <span id="exist" ></span>
-                    
-                    <label for="telephone"> Your Mobile Number:</label>
-                    <br>
-                    <input type="tel" class="textBox" id="telephone" required="true" autocomplete="off" >
-                    <br>
-                    <label for="option">Country:</label>
-                    <br>
-                    <select id="option" class="textBox"  type="country" required name="country" autocomplete="off">
-                        <option value="country ">Select Your Country</option>
-                        <option value="india">India</option>
-                        <option value="Australia">Australia</option>
-                    </select>
-                    <br>
-                    Select Your Gender:
-                    <br>
-                    <select class="textBox" id="gender" type="country" required name="gender" autocomplete="off">
-                        <option value="gender ">Select Your Gender</option>
-                        <option value="male">male</option>
-                        <option value="female">female</option>
-                    </select>
-                    
-                    <br>
-                    <label for="password">Create Your Password:</label>
-                    
-                    <br>
-                    <input id="password" type="password" required minlength="4" required maxlength="20"  class="textBox" />
-                    <br />
-                    <span id = "message"  > </span>  
-                     
-                    <label for="confirmPass">Confirm Your Password:</label>
-                    <br>
-                    <input id="confirmPass" type="password" class="textBox" required minlength="4" required maxlength="20" />
-                    <br>
-                    <label for="submit"> </label>
-                    <br>
-                    <input  type="submit" id="submit"   value="REGISTER" />
-                    <br />
-                    <label for="submit"> OR</label>
-                    <br>
-                    <input  type="button" id="Submit" onclick="relocate()"  value="login" />
-                </form>
-            </div>
-       
- 
+<body>
+    <div id="outer">
+        <form id="myForm">
+            <h1>Create Account</h1>
+            <label for="name">Full Name:</label>
+            <br />
+            <input id="name" type="text" class="textBox" required placeholder="Enter Your Full Name"
+                autocomplete="off" />
+            <br />
+            <label for="email">Email Id:</label>
+            <br />
+            <input id="email" type="email" class="textBox" required placeholder="Enter Your Email ID "
+                autocomplete="off" />
+            <br />
+            <span id="exist"></span>
+            <label for="telephone">Mobile Number:</label>
+            <br />
+            <input type="tel" class="textBox" id="telephone" placeholder=" Enter Your Mobile Number " required
+                autocomplete="off" minlength="10" maxlength="10" />
+            <br />
+            <label for="option">Country:</label>
+            <br />
+            <select id="option" class="textBox" type="country" required name="country" autocomplete="off">
+                <option value="country ">Select Your Country</option>
+                <option value="india">India</option>
+                <option value="Australia">Australia</option>
+                <option value="Australia">America</option>
+                <option value="Australia">Canada</option>
+                <option value="Australia">Russia</option>
+                <option value="Australia">France</option>
+                <option value="Australia">Japan</option>
+                <option value="Australia">Spain</option>
+                <option value="Australia">Turkey</option>
 
+            </select>
+            <br />
+            Gender:
+            <br />
+            <select class="textBox" id="gender" type="country" required name="gender" autocomplete="off">
+                <option value="gender ">Select Your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <br />
+            <div class="input-containers">
+                <label for="password">Create Your Password:</label>
+                <br />
+                <input id="password" type="password" required minlength="4" required maxlength="20"
+                    placeholder="Enter Password" class="textBox" />
+                <img src="images/i.png" alt=" " onclick="showPasswords()" id="eyes" ondragstart="return false;">
+                <br />
+                <div class="input-container">
+                    <label for="confirmPass">Confirm Your Password:</label>
+                    <br />
+                    <input id="confirmPass" type="password" class="textBox" required minlength="4" required
+                        maxlength="20" placeholder="Enter Your Password Again" />
+                    <img src="images/i.png" alt="Toggle Password Visibility" onclick="showPassword()" id="eye"
+                        ondragstart="return false;">
+                </div>
+                <br />
+                <span id="message"> </span>
+                <label for="submit"> </label>
+                <br />
+                <input type="submit" id="submit" value="SIGN UP" />
+                <br />
+                <label for="submit"></label>
+                <p class="alert">
+                    -----------------------OR-----------------------<br />
+                    Already have an account ?
+                </p>
+                <input type="submit" onclick="loginPage()" id="Submit" value="LOGIN" />
+        </form>
+    </div>
 </body>
 
 </html>
+
+<script src="signup.js"></script>

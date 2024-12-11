@@ -7,26 +7,44 @@
     <link rel="stylesheet" href="login.css">
     <script src="./login.js"></script>
     <link>
-    <title>Log In Page</title>
+    <title>LogIn Page</title>
 </head>
 
-<body style="background-image: url(background-img.png); background-size:100vw 100vh ; background-repeat: no-repeat;">
+<body
+    style="background-image: url(images/background-img.png); background-size:100vw 100vh ; background-repeat: no-repeat;">
     <div id="form">
         <form action="#">
             <h1>Log In </h1>
-            <label for="email">Enter Your Email Id:</label>
+            <label for="email">Email ID:</label>
+
             <br>
-            <input type="email" id="email" class="Email"></input>
+            <input type="email" id="email" class="Email" required autocomplete="off"
+                placeholder="Enter Your Registered Email Id"></input>
             <br>
-            <label for="password">Enter password:</label>
+
+            <span id="notMatchEmail"></span>
+
+            <div class="input-container">
+                <label for="password">Password:</label>
+                <br>
+                <input type="password" id="password" class="Password" minlength="4" maxlength="20"
+                    placeholder="Enter Your password">
+                <img src="images/i.png" alt="Toggle Password Visibility" onclick="showPass()" id="eye"
+                    ondragstart="return false;">
+            </div>
+
+
             <br>
-            <input type="password" id="password" class="Password">
-            <span id="notMatch" style="color: red;"></span>
-            <br>
+            <span id="notMatchPassword"></span>
+
             <label for="submit"></label>
             <br>
-            <input type="submit" id="submit" value="Login"  class="submit">
-
+            <input type="submit" id="submit" value="LOGIN" class="submit">
+            <p class="or">
+                ---------------------OR---------------------<br />
+                Don't have an account ?Click on SignUp!
+            </p>
+            <input type="submit" id="register" class="register" onclick="signupPage()" value="SIGN UP" />
         </form>
     </div>
     </div>
