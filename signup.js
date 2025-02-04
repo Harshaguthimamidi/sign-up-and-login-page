@@ -128,7 +128,7 @@ function handleFormSubmit(event) {
 function handleInputChange() {
   // Restrict telephone input to positive integers
   const telephoneInput = document.getElementById("telephone");
-  telephoneInput.value = telephoneInput.value.replace(/[^0-9]/g, "");
+  telephoneInput.value = telephoneInput.value.replace(/[^0-9]/g,"");
 
   const emails = getStoredLoginInfo();
   const inputField = document.getElementById("email").value;
@@ -219,3 +219,4 @@ function showPasswords() {
     changedImages.src = "images/i.png";
   }
 }
+

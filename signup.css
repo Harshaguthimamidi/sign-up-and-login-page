@@ -31,8 +31,8 @@ h1 {
   background-color: #f2f2f2;
   background-blend-mode: lighten;
   border-radius: 15px;
-  border: #49c54d solid 1.9px;
-  box-shadow: #82c599 0px 0px 20px;
+   
+  box-shadow: #ffffff 0px 0px 20px;
   box-sizing: border-box;
   padding: 25px 25px;
   opacity: 0.8;
