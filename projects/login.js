@@ -13,7 +13,7 @@ function verifyAccount(event) {
     );
   });
   if (details.length > 0) {
-    window.location.href = "http://127.0.0.1:5501/homepage.html";
+    window.location.href = "http://127.0.0.1:5501/projects/homepage.html";
   } else {
     document.getElementById("notMatchEmail").innerHTML =
       "Email ID not exist create an account!";
@@ -22,7 +22,7 @@ function verifyAccount(event) {
 }
 function signupPage() {
   
-  window.location.href = "http://127.0.0.1:5501/signup.html";
+  window.location.href = "http://127.0.0.1:5501/projects/signup.html";
 }
 function showPass() {
   const imgChange = document.getElementById("eye");

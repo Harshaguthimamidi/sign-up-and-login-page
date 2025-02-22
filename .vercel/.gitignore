@@ -1,0 +1,13 @@
+# Ignore Vercel and VS Code settings
+.vercel/
+.vscode/
+
+# Ignore node_modules if using Node.js
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore build or dist folders (if applicable)
+dist/
+out/
