@@ -121,7 +121,7 @@ function handleFormSubmit(event) {
   loginInfoListArr.push(loginInfoListObj);
   localStorage.setItem("LoginPersonInfo", JSON.stringify(loginInfoListArr));
   clearInputs();
-  window.location.href = "http://127.0.0.1:5500/homepage.html";
+  window.location.href = "http://127.0.0.1:5501/homepage.html";
   return true;
 }
 
@@ -193,7 +193,7 @@ function Name(name) {
 }
 
 function loginPage() {
-  window.location.href = "http://127.0.0.1:5500/login.html";
+  window.location.href = "http://127.0.0.1:5501/login.html";
 }
 
 function showPassword() {
