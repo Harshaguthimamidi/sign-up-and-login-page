@@ -121,7 +121,7 @@ function handleFormSubmit(event) {
   loginInfoListArr.push(loginInfoListObj);
   localStorage.setItem("LoginPersonInfo", JSON.stringify(loginInfoListArr));
   clearInputs();
-  window.location.href = "http://127.0.0.1:5501/projects/homepage.html";
+  window.location.href = "https://sign-up-and-login-page-gubddtd9p-hs-projects-b6086515.vercel.app/projects/homepage.html";
   return true;
 }
 
@@ -193,7 +193,8 @@ function Name(name) {
 }
 
 function loginPage() {
-  window.location.href = "http://127.0.0.1:5501/projects/login.html";
+  window.location.href = "https://sign-up-and-login-page-gubddtd9p-hs-projects-b6086515.vercel.app/projects/login.html";
+
 }
 
 function showPassword() {
