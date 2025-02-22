@@ -32,8 +32,8 @@ function showPass() {
     imgChange.src = "images/j.png";
   
   
-    const alphabet=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"
-    ]
+    const alphabet=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+    
     
     const small="abcdefghijklmnopqrstuvwxyz"
     let input=document.getElementById("password").value
@@ -45,7 +45,7 @@ for(let k=0;k<word.length;k++){
     if(word[k]===alphabet[i] || !isNaN(word[k]))
     {
      alert(word[k]);
-     break;
+     break;                                                                           
     } 
     else{
       
