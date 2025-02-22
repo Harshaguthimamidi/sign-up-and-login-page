@@ -29,7 +29,7 @@ function showPass() {
   const passwordInput = document.getElementById("password");
   if (passwordInput.type === "password") {
     passwordInput.type = "text";
-    imgChange.src = "images/j.png";
+    imgChange.src = "/projects/images/j.png";
   
   
 //     const alphabet=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];

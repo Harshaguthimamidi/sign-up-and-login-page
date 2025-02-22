@@ -4,24 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
-    <script src="./login.js"></script>
-    <link>
     <title>LogIn Page</title>
+
+    <!-- Corrected CSS link -->
+    <link rel="stylesheet" href="/projects/login.css">
+    <!-- Corrected JS script -->
+    <script src="/projects/login.js" defer></script>
 </head>
 
-<body
-    style="background-image: url(images/background-img.png); background-size:100vw 100vh ; background-repeat: no-repeat;">
+<body style="background-image: url(/projects/images/background-img.png); background-size:100vw 100vh; background-repeat: no-repeat;">
     <div id="form">
         <form action="#">
-            <h1>Log In </h1>
+            <h1>Log In</h1>
             <label for="email">Email ID:</label>
-
             <br>
-            <input type="email" id="email" class="Email" required autocomplete="off"
-                placeholder="Enter Your Registered Email Id"></input>
+            <input type="email" id="email" class="Email" required autocomplete="off" placeholder="Enter Your Registered Email Id">
             <br>
-
             <span id="notMatchEmail"></span>
 
             <div class="input-container">
@@ -29,10 +27,9 @@
                 <br>
                 <input type="password" id="password" class="Password" minlength="4" maxlength="20"
                     placeholder="Enter Your password">
-                <img src="images/i.png" alt="Toggle Password Visibility" onclick="showPass()" id="eye"
+                <img src="/projects/images/i.png" alt="Toggle Password Visibility" onclick="showPass()" id="eye"
                     ondragstart="return false;">
             </div>
-
 
             <br>
             <span id="notMatchPassword"></span>
@@ -42,11 +39,10 @@
             <input type="submit" id="submit" value="LOGIN" class="submit">
             <p class="or">
                 ---------------------OR---------------------<br />
-                Don't have an account ?Click on SignUp!
+                Don't have an account? Click on Sign Up!
             </p>
-            <input type="submit" id="register" class="register" onclick="signupPage()" value="SIGN UP" />
+            <input type="button" id="register" class="register" onclick="signupPage()" value="SIGN UP" />
         </form>
-    </div>
     </div>
 </body>
 

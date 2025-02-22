@@ -201,10 +201,10 @@ function showPassword() {
   const changedImage = document.getElementById("eye");
   if (pass.type === "password") {
     pass.type = "text";
-    changedImage.src = "images/j.png";
+    changedImage.src = "/projects/images/j.png";
   } else {
     pass.type = "password";
-    changedImage.src = "images/i.png";
+    changedImage.src = "/projects/images/i.png";
   }
 }
 
@@ -213,10 +213,11 @@ function showPasswords() {
   const changedImages = document.getElementById("eyes");
   if (passwords.type === "password") {
     passwords.type = "text";
-    changedImages.src = "images/j.png";
+    changedImages.src = "/projects/images/j.png";
   } else {
     passwords.type = "password";
-    changedImages.src = "images/i.png";
+    changedImages.src = "/projects/images/i.png";
+
   }
 }
 

@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="signup.css" />
+    
+    <!-- Corrected CSS Link -->
+    <link rel="stylesheet" href="/projects/signup.css" />
 
-    <title>SignUp page</title>
+    <title>SignUp Page</title>
 </head>
 
 <body>
@@ -18,72 +20,81 @@
             <input id="name" type="text" class="textBox" required placeholder="Enter Your Full Name"
                 autocomplete="off" />
             <br />
-            <label for="email">Email Id:</label>
+
+            <label for="email">Email ID:</label>
             <br />
-            <input id="email" type="email" class="textBox" required placeholder="Enter Your Email ID "
+            <input id="email" type="email" class="textBox" required placeholder="Enter Your Email ID"
                 autocomplete="off" />
             <br />
             <span id="exist"></span>
+
             <label for="telephone">Mobile Number:</label>
             <br />
-            <input type="tel" class="textBox" id="telephone" placeholder=" Enter Your Mobile Number " required
+            <input type="tel" class="textBox" id="telephone" placeholder="Enter Your Mobile Number" required
                 autocomplete="off" minlength="10" maxlength="10" />
             <br />
+
             <label for="option">Country:</label>
             <br />
-            <select id="option" class="textBox" type="country" required name="country" autocomplete="off">
-                <option value="country ">Select Your Country</option>
+            <select id="option" class="textBox" required name="country" autocomplete="off">
+                <option value="country">Select Your Country</option>
                 <option value="india">India</option>
-                <option value="Australia">Australia</option>
-                <option value="Australia">America</option>
-                <option value="Australia">Canada</option>
-                <option value="Australia">Russia</option>
-                <option value="Australia">France</option>
-                <option value="Australia">Japan</option>
-                <option value="Australia">Spain</option>
-                <option value="Australia">Turkey</option>
-
+                <option value="australia">Australia</option>
+                <option value="america">America</option>
+                <option value="canada">Canada</option>
+                <option value="russia">Russia</option>
+                <option value="france">France</option>
+                <option value="japan">Japan</option>
+                <option value="spain">Spain</option>
+                <option value="turkey">Turkey</option>
             </select>
             <br />
-            Gender:
+
+            <label for="gender">Gender:</label>
             <br />
-            <select class="textBox" id="gender" type="country" required name="gender" autocomplete="off">
-                <option value="gender ">Select Your Gender</option>
+            <select class="textBox" id="gender" required name="gender" autocomplete="off">
+                <option value="gender">Select Your Gender</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
             </select>
             <br />
+
             <div class="input-containers">
                 <label for="password">Create Your Password:</label>
                 <br />
-                <input id="password" type="password" required minlength="4" required maxlength="20"
+                <input id="password" type="password" required minlength="4" maxlength="20"
                     placeholder="Enter Password" class="textBox" />
-                <img src="images/i.png" alt=" " onclick="showPasswords()" id="eyes" ondragstart="return false;">
+                <img src="/projects/images/i.png" alt="Toggle Password Visibility" onclick="showPasswords()" id="eyes"
+                    ondragstart="return false;">
                 <br />
+
                 <div class="input-container">
                     <label for="confirmPass">Confirm Your Password:</label>
                     <br />
-                    <input id="confirmPass" type="password" class="textBox" required minlength="4" required
-                        maxlength="20" placeholder="Enter Your Password Again" />
-                    <img src="images/i.png" alt="Toggle Password Visibility" onclick="showPassword()" id="eye"
+                    <input id="confirmPass" type="password" class="textBox" required minlength="4" maxlength="20"
+                        placeholder="Enter Your Password Again" />
+                    <img src="/projects/images/i.png" alt="Toggle Password Visibility" onclick="showPassword()" id="eye"
                         ondragstart="return false;">
                 </div>
                 <br />
-                <span id="message"> </span>
-                <label for="submit"> </label>
+                <span id="message"></span>
+
+                <label for="submit"></label>
                 <br />
                 <input type="submit" id="submit" value="SIGN UP" />
                 <br />
-                <label for="submit"></label>
+
                 <p class="alert">
                     -----------------------OR-----------------------<br />
-                    Already have an account ?
+                    Already have an account?
                 </p>
-                <input type="submit" onclick="loginPage()" id="Submit" value="LOGIN" />
+                <input type="button" onclick="loginPage()" id="Submit" value="LOGIN" />
+            </div>
         </form>
     </div>
+    
+    <!-- Corrected JavaScript Link -->
+    <script src="/projects/signup.js" defer></script>
 </body>
 
 </html>
-
-<script src="signup.js"></script>
