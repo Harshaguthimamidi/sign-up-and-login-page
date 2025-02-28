@@ -13,7 +13,7 @@ function verifyAccount(event) {
     );
   });
   if (details.length > 0) {
-    window.location.href = "homepage.html";
+    window.location.href = "/homepage";    // Homepage
 
   } else {
     document.getElementById("notMatchEmail").innerHTML =
@@ -23,7 +23,7 @@ function verifyAccount(event) {
 }
 function signupPage() {
   
-  window.location.href = "signup.html";
+  window.location.href = "/";            // Signup Page
 }
 function showPass() {
   const imgChange = document.getElementById("eye");

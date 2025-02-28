@@ -1,13 +1,12 @@
 {
-    "routes": [
-      { "src": "/", "dest": "/projects/signup.html" },
-      { "src": "/login", "dest": "/projects/login.html" },
-      { "src": "/homepage", "dest": "/projects/homepage.html" },
-      { "src": "/signup.css", "dest": "/projects/signup.css" },
-      { "src": "/signup.js", "dest": "/projects/signup.js" },
-      { "src": "/login.css", "dest": "/projects/login.css" },
-      { "src": "/login.js", "dest": "/projects/login.js" },
-      { "src": "/images/(.*)", "dest": "/projects/images/$1" }
-    ]
-  }
-  
+  "routes": [
+    { "src": "/$", "dest": "/projects/signup.html" },
+    { "src": "/login", "dest": "/projects/login.html" },
+    { "src": "/homepage", "dest": "/projects/homepage.html" },
+    { "src": "/signup.css", "dest": "/projects/signup.css" },
+    { "src": "/signup.js", "dest": "/projects/signup.js" },
+    { "src": "/login.css", "dest": "/projects/login.css" },
+    { "src": "/login.js", "dest": "/projects/login.js" },
+    { "src": "/images/(.*)", "dest": "/projects/images/$1" }
+  ]
+}

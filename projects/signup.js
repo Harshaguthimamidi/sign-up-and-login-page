@@ -121,7 +121,7 @@ function handleFormSubmit(event) {
   loginInfoListArr.push(loginInfoListObj);
   localStorage.setItem("LoginPersonInfo", JSON.stringify(loginInfoListArr));
   clearInputs();
-  window.location.href = "homepage.html";
+  window.location.href = "/homepage";    // Homepage
   return true;
 }
 
@@ -193,7 +193,7 @@ function Name(name) {
 }
 
 function loginPage() {
-  window.location.href = "login.html";
+  window.location.href = "/login";       // Login Page
 
 }
 
