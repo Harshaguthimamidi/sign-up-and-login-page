@@ -13,7 +13,7 @@ function verifyAccount(event) {
     );
   });
   if (details.length > 0) {
-    window.location.href = "https://sign-up-and-login-page-f6snro5ac-hs-projects-b6086515.vercel.app/projects/homepage.html";
+    window.location.href = "homepage.html";
 
   } else {
     document.getElementById("notMatchEmail").innerHTML =
@@ -23,7 +23,7 @@ function verifyAccount(event) {
 }
 function signupPage() {
   
-  window.location.href = "https://sign-up-and-login-page-f6snro5ac-hs-projects-b6086515.vercel.app/projects/signup.html";
+  window.location.href = "signup.html";
 }
 function showPass() {
   const imgChange = document.getElementById("eye");
